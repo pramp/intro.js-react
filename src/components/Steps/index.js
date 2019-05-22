@@ -216,7 +216,7 @@ export default class Steps extends Component {
    * Installs Intro.js.
    */
   installIntroJs() {
-    this.introJs = introJs();
+    this.introJs = introJs(this.props.target);
 
     this.introJs.onexit(this.onExit);
     this.introJs.onbeforeexit(this.onBeforeExit);
